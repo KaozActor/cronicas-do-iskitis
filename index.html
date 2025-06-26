@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,98 +15,113 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-        }header {
-        width: 100%;
-        background-color: #121212;
-        padding: 20px 0;
-        text-align: center;
-        border-bottom: 2px solid #f0b400;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-    }
+        }
 
-    header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-        letter-spacing: 1px;
-        color: #f0b400;
-    }
+        header {
+            width: 100%;
+            background-color: #121212;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #f0b400;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
 
-    nav {
-        margin-top: 10px;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            color: #f0b400;
+        }
 
-    nav a {
-        color: #e4e4e4;
-        text-decoration: none;
-        margin: 0 15px;
-        font-size: 1rem;
-        transition: color 0.3s;
-    }
+        nav {
+            margin-top: 10px;
+        }
 
-    nav a:hover {
-        color: #f0b400;
-    }
+        nav a {
+            color: #e4e4e4;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
 
-    .spacer {
-        height: 100px;
-    }
+        nav a:hover {
+            color: #f0b400;
+        }
 
-    .container {
-        max-width: 800px;
-        width: 90%;
-        padding: 20px;
-    }
+        .spacer {
+            height: 140px;
+        }
 
-    .chapter {
-        background-color: #1a1a1a;
-        margin-bottom: 25px;
-        padding: 20px;
-        border-left: 4px solid #f0b400;
-        border-radius: 4px;
-        transition: background-color 0.3s;
-    }
+        .banner {
+            width: 100%;
+            max-height: 300px;
+            overflow: hidden;
+        }
 
-    .chapter:hover {
-        background-color: #222222;
-    }
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: brightness(0.95);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
 
-    .chapter h2 {
-        color: #f0b400;
-        margin-top: 0;
-    }
+        .container {
+            max-width: 800px;
+            width: 90%;
+            padding: 20px;
+        }
 
-    .chapter p {
-        line-height: 1.6;
-        color: #cccccc;
-    }
+        .chapter {
+            background-color: #1a1a1a;
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 4px solid #f0b400;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
 
-    .footer {
-        margin-top: auto;
-        padding: 20px;
-        text-align: center;
-        color: #777;
-        font-size: 0.9rem;
-    }
+        .chapter:hover {
+            background-color: #222222;
+        }
 
-    .button-link {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 10px 18px;
-        background-color: #f0b400;
-        color: #0b0b0b;
-        text-decoration: none;
-        border-radius: 3px;
-        transition: background-color 0.3s;
-    }
+        .chapter h2 {
+            color: #f0b400;
+            margin-top: 0;
+        }
 
-    .button-link:hover {
-        background-color: #d99a00;
-    }
-</style>
+        .chapter p {
+            line-height: 1.6;
+            color: #cccccc;
+        }
 
+        .footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .button-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background-color: #f0b400;
+            color: #0b0b0b;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        .button-link:hover {
+            background-color: #d99a00;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -115,44 +131,49 @@
             <a href="#capitulos">Capítulos</a>
             <a href="https://discord.gg/seulink" target="_blank">Servidor</a>
         </nav>
-    </header><div class="spacer"></div>
+    </header>
 
-<div class="container" id="inicio">
-    <p style="font-size: 1.2rem; line-height: 1.8; text-align: center;">
-        Bem-vindo ao arquivo oficial das Crônicas de Iskitis. Aqui, estão registrados os acontecimentos, conspirações e batalhas que moldam nosso reino. 
-        Leia cada capítulo para entender a história oculta por trás do servidor.
-    </p>
-</div>
+    <div class="spacer"></div>
 
-<div class="container" id="capitulos">
-    <div class="chapter">
-        <h2>Capítulo 1: O Início</h2>
-        <p>A névoa pairava sobre Iskitis. Ninguém sabia o que estava por vir...</p>
-        <a class="button-link" href="capitulos/capitulo1.html">Ler Completo</a>
+    <div class="banner">
+        <img src="imagens/banner.jpg" alt="Banner Crônicas do Iskitis">
     </div>
 
-    <div class="chapter">
-        <h2>Capítulo 2: Primeiros Conflitos</h2>
-        <p>Os sussurros se espalhavam pelas ruas, alianças se formavam nas sombras...</p>
-        <a class="button-link" href="capitulos/capitulo2.html">Ler Completo</a>
+    <div class="container" id="inicio">
+        <p style="font-size: 1.2rem; line-height: 1.8; text-align: center;">
+            Bem-vindo ao arquivo oficial das Crônicas de Iskitis. Aqui, estão registrados os acontecimentos, conspirações e batalhas que moldam nosso reino. 
+            Leia cada capítulo para entender a história oculta por trás do servidor.
+        </p>
     </div>
-</div>
 
-<div class="footer">
-    &copy; 2025 Crônicas do Iskitis. Todos os direitos reservados.
-</div>
+    <div class="container" id="capitulos">
+        <div class="chapter">
+            <h2>Capítulo 1: O Início</h2>
+            <p>A névoa pairava sobre Iskitis. Ninguém sabia o que estava por vir...</p>
+            <a class="button-link" href="capitulos/capitulo1.html">Ler Completo</a>
+        </div>
 
-<script>
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
+        <div class="chapter">
+            <h2>Capítulo 2: Primeiros Conflitos</h2>
+            <p>Os sussurros se espalhavam pelas ruas, alianças se formavam nas sombras...</p>
+            <a class="button-link" href="capitulos/capitulo2.html">Ler Completo</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Crônicas do Iskitis. Todos os direitos reservados.
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^=\"#\"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
         });
-    });
-</script>
-
+    </script>
 </body>
 </html>
