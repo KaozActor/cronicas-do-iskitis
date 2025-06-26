@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iskitis - Hub Oficial</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background-color: #0b0b0b;
+            color: #e4e4e4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            background-color: #121212;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #f0b400;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            color: #f0b400;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #e4e4e4;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f0b400;
+        }
+
+        .spacer {
+            height: 140px;
+        }
+
+        .banner {
+            width: 100%;
+            max-height: 300px;
+            overflow: hidden;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: brightness(0.95);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-left: 4px solid #f0b400;
+            border-radius: 4px;
+        }
+
+        .section h2 {
+            color: #f0b400;
+            margin-top: 0;
+        }
+
+        .section p {
+            line-height: 1.6;
+            color: #cccccc;
+        }
+
+        .button-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background-color: #f0b400;
+            color: #0b0b0b;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        .button-link:hover {
+            background-color: #d99a00;
+        }
+
+        .footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Iskitis</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#cronicas">Crônicas</a>
+            <a href="#eventos">Eventos</a>
+            <a href="https://discord.gg/seulink" target="_blank">Servidor</a>
+        </nav>
+    </header>
+
+    <div class="spacer"></div>
+
+    <div class="banner">
+        <img src="imagens/banner.png" alt="Banner Iskitis">
+    </div>
+
+    <div class="container" id="inicio">
+        <div class="section">
+            <h2>Bem-vindo ao Hub de Iskitis</h2>
+            <p>
+                Este é o centro oficial do universo Iskitis. Aqui, você encontra tudo: das Crônicas que narram os acontecimentos do reino, até eventos, competições e novidades do servidor.
+            </p>
+        </div>
+    </div>
+
+    <div class="container" id="cronicas">
+        <div class="section">
+            <h2>Crônicas do Iskitis</h2>
+            <p>
+                Explore a história oculta por trás do servidor. Conspirações, batalhas e segredos revelados em cada capítulo.
+            </p>
+            <a class="button-link" href="cronicas/index.html">Acessar Crônicas</a>
+        </div>
+    </div>
+
+    <div class="container" id="eventos">
+        <div class="section">
+            <h2>Eventos Oficiais</h2>
+            <p>
+                Participe dos eventos, competições e dinâmicas da comunidade Iskitis. Fique por dentro dos próximos desafios.
+            </p>
+            <a class="button-link" href="eventos/index.html">Ver Eventos</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Iskitis. Todos os direitos reservados.
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^=\"#\"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                if (href === '#') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
